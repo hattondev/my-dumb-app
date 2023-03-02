@@ -39,6 +39,6 @@ jobs:
             org.opencontainers.image.description=my-dumb-app Docker image
 
       - name: Security pipelinee
-        uses: tylerhatton/dotnet-security-pipeline/blob/master/.github/workflows/security-workflow.yml@master
+        uses: hattondev/dotnet-security-pipeline/.github/workflows/security-workflow.yml@master
         with:
           image_location: ${{secrets.REGISTRY_URL}}/images/my-dumb-app:latest
