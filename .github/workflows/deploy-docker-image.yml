@@ -38,7 +38,7 @@ jobs:
           labels: |
             org.opencontainers.image.description=my-dumb-app Docker image
 
-      - name: Run Security Pipeline
-        uses: hattondev/dotnet-security-pipeline/.github/workflows/security-workflow.yml@master
-        with:
-          image_location: ${{secrets.REGISTRY_URL}}/images/my-dumb-app:latest
+  run-security-pipeline:
+    uses: hattondev/dotnet-security-pipeline/.github/workflows/security-workflow.yml@master
+    with:
+      image_location: ${{secrets.REGISTRY_URL}}/images/my-dumb-app:latest
