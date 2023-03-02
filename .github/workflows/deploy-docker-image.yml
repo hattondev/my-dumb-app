@@ -43,3 +43,4 @@ jobs:
     uses: hattondev/dotnet-security-pipeline/.github/workflows/security-workflow.yml@master
     with:
       image_name: my-dumb-app:latest
+    secrets: inherit
