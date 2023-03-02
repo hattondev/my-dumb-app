@@ -42,6 +42,3 @@ jobs:
         uses: tylerhatton/dotnet-security-pipeline/blob/master/.github/workflows/security-workflow.yml@master
         with:
           image_location: ${{secrets.REGISTRY_URL}}/images/my-dumb-app:latest
-        secrets: inherit
-
-          
